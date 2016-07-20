@@ -21,9 +21,10 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   test "should accept valid submission" do
     assert_difference 'User.count', 1 do
       post users_url,
-           params: { user: { username: "example", password: "password",
+           params: { user: { username: "test", password: "password",
                              password_confirmation: "password" } }
     end
-    assert_response :redirect
+    assert is_logged_in?
+    assert_redirected_to messages_url
   end
 end

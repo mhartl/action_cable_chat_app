@@ -9,7 +9,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "should be valid" do
-    assert @user.valid?
+    assert @user.valid?, @user.errors.full_messages
   end
 
   test "username should be present" do
