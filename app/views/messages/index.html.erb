@@ -1,2 +1,13 @@
-<h1>Messages#index</h1>
-<p>Find me in app/views/messages/index.html.erb</p>
+<h1>Messages</h1>
+
+<% if @messages && @messages.any? %>
+  <% @messages.each do |message| %>
+  <%= message.user.username %>: <%= message.content %>
+  <% end %>
+<% end %>
+
+<%= form_for(@message) do |f| %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+  <%= f.submit %>
+<% end %>

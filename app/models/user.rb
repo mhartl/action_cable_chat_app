@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :messages
   validates :username, presence: true, uniqueness: { case_sensitive: false },
                        format: { with: /\A\w+\z/i },
                        length: { maximum: 15 }
