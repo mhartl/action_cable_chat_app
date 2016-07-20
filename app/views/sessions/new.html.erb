@@ -4,9 +4,9 @@
   <%= f.text_field :username %>
 
   <%= f.label :password %>
-  <%= f.password_field :password, class: 'form-control' %>
+  <%= f.password_field :password %>
 
-  <%= f.submit "Log in", class: "btn btn-primary" %>
+  <%= f.submit "Log in" %>
 <% end %>
 
 <p>New user? <%= link_to "Sign up", new_user_path %></p>
