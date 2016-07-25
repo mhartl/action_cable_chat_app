@@ -65,14 +65,32 @@ a
 
 
 .header
-  padding: 15px 40px
+  margin-bottom: 30px
+  padding: 10px 20px
+  position: relative
 
 .header-logo 
-  transition: all 0.2s ease-in-out
-  &:hover
-    opacity: 0.5
-  img
+  background-color: #7292b0
+  left: -20px
+  padding: 15px 16px 9px
+  position: absolute
+  top: -20px
+  &:hover svg
+    stroke: #eeaf3a
+  svg
+    stroke: #fff
+    transition: all 0.2s ease-in-out
     width: 40px
+
+.st0
+  fill: none
+  stroke-width: 10
+  stroke-miterlimit: 10
+.st1
+  fill: none
+  stroke-width: 5
+  stroke-linejoin: bevel
+  stroke-miterlimit: 10
 
 .header-nav
   float: right
@@ -82,7 +100,7 @@ a
   a
     box-shadow: 0 -1px 0 0 rgba(#7292b0,0.3) inset, 0 2px 0 0 rgba(#7292b0,0.3)
     color: #7292b0
-    font-size: 11px
+    font-size: 10px
     letter-spacing: 0.075em
     text-decoration: none
     text-transform: uppercase
@@ -221,7 +239,7 @@ button, input[type="submit"]
     height: 100%
   textarea
     height: 100%
-    width: 85%
+    width: 84.5%
   input[type="submit"]
     height: 100%
     vertical-align: top
