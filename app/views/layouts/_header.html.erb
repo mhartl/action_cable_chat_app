@@ -1,5 +1,8 @@
-<ul>
-  <% if logged_in? %>
-  <li><%= link_to "Log out", logout_path, method: :delete %>
-  <% end %>
-</ul>
+<header class="header">
+  <a href="/" class="header-logo"><%= image_tag "logo_b.png" %></a>
+  <ul class="header-nav">
+    <% if logged_in? %>
+    <li><%= link_to "Sign out", logout_path, method: :delete %>
+    <% end %>
+  </ul>
+</header>

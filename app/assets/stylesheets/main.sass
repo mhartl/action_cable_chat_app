@@ -1,0 +1,231 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section
+  border: 0
+  font-family: helvetica, sans
+  font-size: 16px
+  font-style: inherit
+  font-weight: inherit
+  line-height: 1
+  margin: 0
+  padding: 0
+  vertical-align: baseline
+
+html
+  background-color: #fcfaf5
+  box-shadow: 0 0 0 20px #7292b0 inset
+  box-sizing: border-box
+  min-height: 100%
+  padding: 20px
+
+a
+  transition: all 0.2s ease-in-out
+
+.alert
+  background-color: #7292b0
+  color: #fcfaf5
+  font-size: 12px
+  padding: 0 20px 20px
+  width: 100%
+
+.animatedDelay
+  -webkit-animation-delay: 3s
+  animation-delay: 3s
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  transition: all 0.5s ease-in-out
+  overflow: hidden
+  box-sizing: border-box
+
+@keyframes fadeOutUp
+  0%
+    opacity: 1
+    max-height: 50px
+  50%
+    max-height: 0
+    padding: 0 40px
+  100%
+    opacity: 0
+    max-height: 0
+    padding: 0 40px
+
+.fadeOutUp
+  -webkit-animation-name: fadeOutUp
+  animation-name: fadeOutUp
+
+@-webkit-keyframes fadeOutUpBig
+  0%
+    opacity: 1
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+  100%
+    opacity: 0
+    -webkit-transform: translateY(-2000px)
+    transform: translateY(-2000px)
+
+
+.header
+  padding: 15px 40px
+
+.header-logo 
+  transition: all 0.2s ease-in-out
+  &:hover
+    opacity: 0.5
+  img
+    width: 40px
+
+.header-nav
+  float: right
+  li
+    display: inline-block
+    list-style: none
+  a
+    box-shadow: 0 -1px 0 0 rgba(#7292b0,0.3) inset, 0 2px 0 0 rgba(#7292b0,0.3)
+    color: #7292b0
+    font-size: 11px
+    letter-spacing: 0.075em
+    text-decoration: none
+    text-transform: uppercase
+    &:hover
+      color: #e67642
+      box-shadow: 0 -1px 0 0 rgba(#e67642,0.3) inset, 0 2px 0 0 rgba(#e67642,0.3)
+
+
+// a
+//   box-shadow: 0 -1px 0 0 rgba(#fcfaf5,0.3) inset, 0 2px 0 0 rgba(#fcfaf5,0.3)
+//   color: #fcfaf5
+//   font-size: 0.9em
+//   letter-spacing: 0.05em
+//   text-decoration: none
+//   text-transform: uppercase
+//   text-shadow: 0 1px 0 #4b6680, 1px 1px 0 #4b6680, -1px 1px 0 #4b6680, -2px 1px 0 #4b6680, 2px 1px 0 #4b6680
+//   transition: all 0.2s ease-in-out
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]
+  box-shadow: 0 3px 0 0 rgba(0,0,0,0.1) inset
+  box-sizing: border-box
+  border: 0
+  color: #999
+  font-family: helvetica, sans
+  font-size: 14px
+  margin: 0
+  padding: 14px 10px
+  &:focus
+    color: #000
+    box-shadow: 0 3px 0 0 #eeaf3a inset
+
+button, input[type="submit"]
+  background-color: #7292b0
+  border: 0
+  box-shadow: 0 3px 0 0 rgba(0,0,0,0.1)
+  box-sizing: border-box
+  color: #fcfaf5
+  cursor: pointer
+  font-size: 12px
+  letter-spacing: 0.05em
+  padding: 12px
+  text-transform: uppercase
+  transition: all 0.2s ease-in-out
+  &:hover
+    background-color: #eeaf3a
+  &:active
+    background-color: #333
+
+.dialog
+  background-color: #4b6680
+  border: 10px solid #7292b0
+  box-sizing: border-box
+  margin: 5vh auto 0
+  padding: 40px
+  width: 500px
+  h1
+    color: #fcfaf5
+    font-size: 28px
+    margin-bottom: 30px
+    text-align: center
+  label
+    color: #fcfaf5
+    display: block
+    font-size: 10px
+    letter-spacing: 0.05em
+    padding-bottom: 5px
+    text-transform: uppercase
+  label ~ label
+    margin-top: 30px
+  input:not([type="submit"])
+    width: 100%
+  input[type="submit"]
+    display: block
+    margin: 40px auto 0
+    width: 150px
+
+.session-links
+  color: #fcfaf5
+  margin-top: 50px
+  li
+    font-size: 12px
+    list-style: none
+  li ~ li
+    margin-top: 5px
+  a
+    box-shadow: 0 -1px 0 0 rgba(#fcfaf5,0.3) inset, 0 2px 0 0 rgba(#fcfaf5,0.3)
+    color: #fcfaf5
+    font-size: 11px
+    letter-spacing: 0.05em
+    text-decoration: none
+    text-transform: uppercase
+    &:hover
+      color: #e67642
+      box-shadow: 0 -1px 0 0 rgba(#e67642,0.3) inset, 0 2px 0 0 rgba(#e67642,0.3)
+
+.message-wr
+  height: 75vh
+  margin: auto
+  width: 80vw
+
+.messages
+  background-color: #fff
+  box-shadow: 0 0 0 5px #f4f2ed inset
+  box-sizing: border-box
+  height: 84%
+  padding: 20px
+
+.message
+  line-height: 1.6
+
+.message-user
+  color: #666
+  display: inline
+  font-size: 13px
+
+.message-input
+  background-color: rgba(0,0,0,0.03)
+  box-sizing: border-box
+  height: 16.5%
+  padding: 20px
+  form
+    height: 100%
+  textarea
+    height: 100%
+    width: 85%
+  input[type="submit"]
+    height: 100%
+    vertical-align: top
+    width: 14.5%
+
+
+

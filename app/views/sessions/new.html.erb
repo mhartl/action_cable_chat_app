@@ -1,12 +1,18 @@
-<%= form_for(:session, url: login_path) do |f| %>
 
-  <%= f.label :username %>
-  <%= f.text_field :username %>
+<div class="dialog">
+  <%= form_for(:session, url: login_path) do |f| %>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
 
-  <%= f.submit "Log in" %>
-<% end %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
 
-<p>New user? <%= link_to "Sign up", new_user_path %></p>
+    <%= f.submit "Log in" %>
+  <% end %>
+
+  <ul class="session-links">
+    <li>New user?</li>
+    <li><%= link_to "Sign up", new_user_path %></li>
+  </ul>
+</div>

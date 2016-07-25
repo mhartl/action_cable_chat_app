@@ -1,16 +1,23 @@
-<h1>Sign up</h1>
 
-<%= form_for(@user) do |f| %>
-  <%= render 'shared/error_messages' %>
+<div class="dialog">
+  <h1>Sign up</h1>
 
-  <%= f.label :username %>
-  <%= f.text_field :username %>
+  <%= form_for(@user) do |f| %>
+    <%= render 'shared/error_messages' %>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
 
-  <%= f.label :password_confirmation, "Confirmation" %>
-  <%= f.password_field :password_confirmation %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
 
-  <%= f.submit "Sign up" %>
-<% end %>
+    <%= f.label :password_confirmation, "Confirmation" %>
+    <%= f.password_field :password_confirmation %>
+
+    <%= f.submit "Sign up" %>
+  <% end %>
+  <ul class="session-links">
+    <li>Already have an account?</li>
+    <li><%= link_to "Sign In", root_path %></li>
+  </ul>
+</div>

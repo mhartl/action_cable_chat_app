@@ -9,10 +9,10 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
     <% flash.each do |message_type, message| %>
-      <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <div class="alert alert-<%= message_type %> animatedDelay fadeOutUp"><%= message %></div>
     <% end %>
+    <%= render 'layouts/header' %>
     <%= yield %>
   </body>
 </html>
