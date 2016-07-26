@@ -1,9 +1,13 @@
-
 <div class="message-wr">
   <div class="messages">
     <% if @messages && @messages.any? %>
       <% @messages.each do |message| %>
-      <div class="message"><div class="message-user"><%= message.user.username %>:</div> <%= message.content %></div>
+      <div class="message">
+        <div class="message-user">
+          <%= message.user.username %>:
+        </div>
+        <%= message.content %>
+      </div>
       <% end %>
     <% end %>
   </div>
@@ -14,5 +18,4 @@
       <%= f.submit "Send" %>
     <% end %>
   </div>
-
 </div>
