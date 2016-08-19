@@ -1,0 +1,6 @@
+<div class="message-input">
+  <%= form_for(@message) do |f| %>
+    <%= f.text_area :content %>
+    <%= f.submit "Send" %>
+  <% end %>
+</div>
