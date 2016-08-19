@@ -23,8 +23,6 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
                                          password: "password" } }
     assert is_logged_in?
     assert_redirected_to messages_url
-    follow_redirect!
-    assert_select "a", "Log out"
     delete logout_url
     assert_not is_logged_in?
     assert_redirected_to login_url

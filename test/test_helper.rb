@@ -4,6 +4,11 @@ require 'rails/test_help'
 require "minitest/reporters"
 Minitest::Reporters.use!
 
+# Returns the hash digest of the given string.
+def digest(string)
+  BCrypt::Password.create(string, cost: BCrypt::Engine::MIN_COST)
+end
+
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
