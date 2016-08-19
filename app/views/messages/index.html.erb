@@ -1,15 +1,19 @@
 <div class="message-wr">
   <div class="messages">
-    <% if @messages && @messages.any? %>
-      <% @messages.each do |message| %>
-      <div class="message">
-        <div class="message-user">
-          <%= message.user.username %>:
+    <div class="messages-table">
+      <% if @messages && @messages.any? %>
+        <% @messages.each do |message| %>
+        <div class="message">
+          <div class="message-user">
+            <%= message.user.username %>:
+          </div>
+          <div class="message-content">
+            <%= message.content %>
+          </div>
         </div>
-        <%= message.content %>
-      </div>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
 
   <div class="message-input">

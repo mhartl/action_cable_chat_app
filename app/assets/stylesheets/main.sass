@@ -224,14 +224,25 @@ button, input[type="submit"]
   overflow: scroll
   padding: 20px
 
+.messages-table
+  display: table
+  width: 100%
+
 .message
-  line-height: 1.6
+  display: table-row
+  &:nth-child(2n) div ~ div
+    background: rgba(#000,0.02)
+  > div
+    display: table-cell
+    padding: 13px 10px 10px
 
 .message-user
   color: #666
-  display: inline
   font-size: 13px
   margin-right: 10px
+
+.message-content
+  width: 100%
 
 .message-input
   background-color: rgba(0,0,0,0.03)
