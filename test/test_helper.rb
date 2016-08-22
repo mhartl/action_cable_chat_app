@@ -14,7 +14,7 @@ class ActiveSupport::TestCase
   fixtures :all
 
   def is_logged_in?
-    !session[:user_id].nil?
+    !cookies['user_id'].empty?
   end
 end
 
