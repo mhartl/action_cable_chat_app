@@ -6,8 +6,12 @@ class MessagesController < ApplicationController
   end
 
   def create
-    current_user.messages.create(message_params)
-    render 'index'
+    message = current_user.messages.build(message_params)
+    if message.save
+      redirect_to messages_url
+    else
+      render 'index'
+    end
   end
 
   private
