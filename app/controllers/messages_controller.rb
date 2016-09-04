@@ -17,7 +17,7 @@ class MessagesController < ApplicationController
   private
 
     def get_messages
-      @messages = Message.all
+      @messages = Message.for_display
       @message  = current_user.messages.build
     end
 
