@@ -217,6 +217,3 @@ DEPENDENCIES
   tzinfo-data
   uglifier (= 3.0.0)
   web-console (= 3.1.1)
-
-BUNDLED WITH
-   1.11.2
