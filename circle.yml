@@ -1,0 +1,6 @@
+deployment:
+  staging:
+    branch: master
+    commands:
+      - git push git@heroku.com:enigmatic-headland-32122.git $CIRCLE_SHA1:master
+      - heroku run rake db:migrate --app enigmatic-headland-32122
