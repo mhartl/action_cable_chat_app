@@ -14,7 +14,6 @@ class MessagesController < ApplicationController
         ActionCable.server.broadcast "room_channel_user_#{mention.id}",
                                      mention: true
       end
-      head :ok
     end
   end
 
