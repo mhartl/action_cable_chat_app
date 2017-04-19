@@ -1,0 +1,369 @@
+/* line 1, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  border: 0;
+  font-family: helvetica, sans;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* line 10, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+html {
+  background-color: #fcfaf5;
+  box-shadow: 0 0 0 20px #7292b0 inset;
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 20px;
+}
+
+/* line 17, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+a {
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 20, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.alert {
+  background-color: #7292b0;
+  color: #fcfaf5;
+  font-size: 12px;
+  padding: 0 20px 20px;
+  width: 100%;
+}
+
+/* line 27, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.animatedDelay {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    max-height: 50px;
+  }
+  50% {
+    max-height: 0;
+    padding: 0 40px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    padding: 0 40px;
+  }
+}
+/* line 50, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+@-webkit-keyframes fadeOutUpBig {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+}
+/* line 65, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.header {
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* line 70, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.header-logo {
+  background-color: #7292b0;
+  left: -20px;
+  padding: 15px 16px 9px;
+  position: absolute;
+  top: -20px;
+}
+/* line 76, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.header-logo:hover svg {
+  stroke: #eeaf3a;
+}
+/* line 78, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.header-logo svg {
+  stroke: #fff;
+  transition: all 0.2s ease-in-out;
+  width: 40px;
+}
+
+/* line 83, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.st0 {
+  fill: none;
+  stroke-width: 10;
+  stroke-miterlimit: 10;
+}
+
+/* line 87, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.st1 {
+  fill: none;
+  stroke-width: 5;
+  stroke-linejoin: bevel;
+  stroke-miterlimit: 10;
+}
+
+/* line 93, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.header-nav {
+  float: right;
+}
+/* line 95, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.header-nav li {
+  display: inline-block;
+  list-style: none;
+}
+/* line 98, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.header-nav a {
+  box-shadow: 0 -1px 0 0 rgba(114, 146, 176, 0.3) inset, 0 2px 0 0 rgba(114, 146, 176, 0.3);
+  color: #7292b0;
+  font-size: 10px;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 105, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.header-nav a:hover {
+  color: #e67642;
+  box-shadow: 0 -1px 0 0 rgba(230, 118, 66, 0.3) inset, 0 2px 0 0 rgba(230, 118, 66, 0.3);
+}
+
+/* line 120, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1) inset;
+  box-sizing: border-box;
+  border: 0;
+  color: #999;
+  font-family: helvetica, sans;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 14px 10px;
+}
+/* line 144, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+textarea:focus,
+select:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus {
+  color: #000;
+  box-shadow: 0 3px 0 0 #eeaf3a inset;
+}
+
+/* line 148, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+button, input[type="submit"] {
+  background-color: #7292b0;
+  border: 0;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  color: #fcfaf5;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  padding: 12px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+/* line 160, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+button:hover, input[type="submit"]:hover {
+  background-color: #eeaf3a;
+}
+/* line 162, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+button:active, input[type="submit"]:active {
+  background-color: #333;
+}
+
+/* line 165, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.dialog {
+  background-color: #4b6680;
+  border: 10px solid #7292b0;
+  box-sizing: border-box;
+  margin: 5vh auto 0;
+  padding: 40px;
+  width: 500px;
+}
+/* line 172, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.dialog h1 {
+  color: #fcfaf5;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* line 177, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.dialog label {
+  color: #fcfaf5;
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+/* line 184, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.dialog label ~ label {
+  margin-top: 30px;
+}
+/* line 186, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.dialog input:not([type="submit"]) {
+  width: 100%;
+}
+/* line 188, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.dialog input[type="submit"] {
+  display: block;
+  margin: 40px auto 0;
+  width: 150px;
+}
+
+/* line 193, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.session-links {
+  color: #fcfaf5;
+  margin-top: 50px;
+}
+/* line 196, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.session-links li {
+  font-size: 12px;
+  list-style: none;
+}
+/* line 199, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.session-links li ~ li {
+  margin-top: 5px;
+}
+/* line 201, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.session-links a {
+  box-shadow: 0 -1px 0 0 rgba(252, 250, 245, 0.3) inset, 0 2px 0 0 rgba(252, 250, 245, 0.3);
+  color: #fcfaf5;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 208, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.session-links a:hover {
+  color: #e67642;
+  box-shadow: 0 -1px 0 0 rgba(230, 118, 66, 0.3) inset, 0 2px 0 0 rgba(230, 118, 66, 0.3);
+}
+
+/* line 212, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message-wr {
+  height: 75vh;
+  margin: auto;
+  width: 80vw;
+}
+
+/* line 217, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.messages {
+  background-color: #fff;
+  box-shadow: 0 0 0 5px #f4f2ed inset;
+  box-sizing: border-box;
+  height: 87%;
+  overflow: scroll;
+  padding: 20px;
+}
+
+/* line 225, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.messages-table {
+  display: table;
+  width: 100%;
+}
+
+/* line 229, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message {
+  line-height: 1.6;
+  display: table-row;
+}
+/* line 231, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message:last-child {
+  margin-bottom: 10px;
+}
+/* line 235, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message > div {
+  display: table-cell;
+  padding: 13px 10px 10px;
+}
+
+/* line 239, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message-user {
+  color: #666;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+/* line 244, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message-content {
+  width: 100%;
+}
+
+/* line 247, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message-input {
+  background-color: rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  height: 13%;
+  padding: 0 5px 5px;
+}
+/* line 252, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message-input form {
+  height: 100%;
+}
+/* line 254, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message-input textarea {
+  height: 100%;
+  width: 100%;
+}
+/* line 257, /home/rails/Documents/Practice/action_cable_chat_app/app/assets/stylesheets/main.sass */
+.message-input input {
+  display: none;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
