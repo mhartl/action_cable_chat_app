@@ -15,7 +15,7 @@ gem 'redis',                   '3.3.1'
 gem 'pg',                      '0.19.0'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.13'
+  gem "mysql2", ">= 0.3.18", "< 0.5"
   gem 'byebug',  '9.0.0', platform: :mri
 end
 
