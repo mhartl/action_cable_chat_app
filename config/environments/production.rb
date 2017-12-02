@@ -83,4 +83,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # action cable stuff
+  #
+  config.action_cable.url = 'wss://peaceful-garden-98889.herokuapp.com/cable'
+  config.action_cable.allowed_request_origins = [
+    'https://peaceful-garden-98889.herokuapp.com/' ]
 end
