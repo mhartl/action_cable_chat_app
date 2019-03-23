@@ -9,6 +9,9 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  config.action_cable.allowed_request_origins = [
+      'https://rails-tutorial-mhartl.c9users.io' ]
+
   # Show full error reports.
   config.consider_all_requests_local = true
 
