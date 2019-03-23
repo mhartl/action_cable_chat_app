@@ -1,3 +1,8 @@
+This app was forked from Learn Enough Action Cable to be Dangerous to practice using ActionCable and instant messaging. It necessitates the use of back-end and front-end, having both respond to changes in state when a message is sent. There is use of CoffeeScript within. 
+
+
+
+
 # README
 
 This is the base app for [*Learn Enough Action Cable to Be Dangerous*](https://www.learnenough.com/action-cable-tutorial).
