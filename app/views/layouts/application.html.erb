@@ -15,8 +15,15 @@
     <% end %>
     <%= render 'layouts/header' %>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
+    <% if notice.present? %>
+    <p class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>
+    <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
+    
     <%= yield %>
   </body>
 </html>
