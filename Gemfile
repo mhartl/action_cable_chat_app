@@ -10,6 +10,15 @@ gem 'coffee-rails',            '4.2.1'
 gem 'jquery-rails',            '4.1.1'
 gem 'turbolinks',              '5.0.0'
 gem 'jbuilder',                '2.4.1'
+gem 'kramdown',                '1.12.0'
+gem 'devise'
+gem 'popper_js',            '~> 1.11.1'
+gem 'bootstrap',          '4.0.0.alpha6'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end 
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'

@@ -1,6 +1,6 @@
 
 <div class="dialog">
-  <h1>Sign up</h1>
+  <h1>Start A Trip</h1>
 
   <%= form_for(@user) do |f| %>
     <%= render 'shared/error_messages' %>
@@ -13,6 +13,7 @@
 
     <%= f.label :password_confirmation, "Confirmation" %>
     <%= f.password_field :password_confirmation %>
+
 
     <%= f.submit "Sign up" %>
   <% end %>
