@@ -5,7 +5,7 @@ This is the base app for [*Learn Enough Action Cable to Be Dangerous*](https://w
 To get started, fork the repo and clone it to your local machine, then run the following commands:
 
 ```
-bundle
+bundle install --without production
 rails db:migrate
 rails db:seed
 rails test
