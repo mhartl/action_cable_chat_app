@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-         :omniauthable, omniauth_providers: %i[facebook twitter google_oauth2]
+         #:omniauthable, omniauth_providers: %i[facebook twitter google_oauth2]
   has_many :messages
   NAME_REGEX = /\w+/
   validates :username, presence: true, uniqueness: { case_sensitive: false },

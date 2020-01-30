@@ -1,8 +1,10 @@
 class MessagesController < ApplicationController
-  before_action :authenticate_user!
-  before_action :get_messages
+  skip_before_filter :verify_authenticity_token
+  before_filter :authenticate_user!
+  # before_action :get_messages
 
   def index
+    byebug
   end
 
   def create
