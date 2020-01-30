@@ -1,3 +1,2 @@
 example:
   username: example
-  password_digest: <%= digest('password') %>
