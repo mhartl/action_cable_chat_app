@@ -15,6 +15,8 @@ gem 'devise'
 gem 'popper_js',            '~> 1.11.1'
 gem 'bootstrap',          '4.0.0.alpha6'
 gem 'omniauth-google-oauth2'
+gem 'stripe'
+gem 'figaro'
 
 
 source 'https://rails-assets.org' do
