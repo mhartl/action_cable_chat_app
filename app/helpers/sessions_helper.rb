@@ -7,7 +7,6 @@ module SessionsHelper
 
   def log_out
     cookies.delete(:user_id)
-    @current_user = nil
   end
 
   # Returns the current logged-in user (if any).

@@ -1,6 +1,5 @@
 class MessagesController < ApplicationController
-  skip_before_filter :verify_authenticity_token
-  before_filter :authenticate_user!
+  before_filter :logged_in_user
   before_action :get_messages
 
   def index
